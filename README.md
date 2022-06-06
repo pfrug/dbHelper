@@ -1,5 +1,5 @@
 # DbHelper
-The method **sqlfromBindings** convine Builder functions toSql() and getBindings() to obtain as a result the SQL that is going to be executed.
+The method **sqlFromBindings** convine Builder functions toSql() and getBindings() to obtain as a result the SQL that is going to be executed.
 
 ## Usage
 
@@ -12,7 +12,7 @@ The method **sqlfromBindings** convine Builder functions toSql() and getBindings
             ->where('date_from', '>' , \DB::raw('now()'))
             ->orderBy('created_at', 'DESC');
 
-  dbHelper::sqlfromBindings($query); 
+  dbHelper::sqlFromBindings($query); 
   /*
   output:
   select *
@@ -54,7 +54,7 @@ Other example
             ->join('orders', 'users.id', '=', 'orders.user_id')
             ->select('users.*', 'contacts.phone', 'orders.price');
 
-  dbHelper::sqlfromBindings($query);
+  dbHelper::sqlFromBindings($query);
 
   /*
   output: (without format)
