@@ -10,7 +10,7 @@ class BbHelper
      * @param \Illuminate\Database\Eloquent\Builder $query
      * @return string
      */
-    public static function sqlfromBindings($query, $print = true)
+    public static function sqlFromBindings($query, $print = true)
     {
         $percentTemp = '^&^';
         $sql = str_replace(['%', '?'], [$percentTemp, '%s'], $query->toSql());
