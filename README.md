@@ -1,5 +1,5 @@
 # DbHelper
-The method **sqlFromBindings** convine Builder functions toSql() and getBindings() to obtain as a result the SQL that is going to be executed.
+The method **sqlFromBindings** combine Builder functions toSql() and getBindings() to obtain as a result the SQL that is going to be executed.
 
 ## Usage
 
