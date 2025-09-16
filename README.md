@@ -12,7 +12,7 @@ The method **sqlFromBindings** combine Builder functions toSql() and getBindings
             ->where('date_from', '>' , \DB::raw('now()'))
             ->orderBy('created_at', 'DESC');
 
-  dbHelper::sqlFromBindings($query); 
+  DbHelper::sqlFromBindings($query); 
   /*
   output:
   select *
@@ -54,7 +54,7 @@ Other example
             ->join('orders', 'users.id', '=', 'orders.user_id')
             ->select('users.*', 'contacts.phone', 'orders.price');
 
-  dbHelper::sqlFromBindings($query);
+  DbHelper::sqlFromBindings($query);
 
   /*
   output: (without format)
