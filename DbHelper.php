@@ -2,7 +2,7 @@
 
 namespace App\Helpers
 
-class BbHelper
+class DbHelper
 {
     /**
      * Combines SQL and its bindings
